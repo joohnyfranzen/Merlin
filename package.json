@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "client/react-scripts start && server/index.js",
+    "start": "client/react-scripts",
     "chat": "nodemon index.js",
     "seed": "nodemon server/db/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
