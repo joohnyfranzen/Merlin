@@ -1,0 +1,189 @@
+*{
+    font-family: 'Mystery Quest', cursive;
+    margin: 0;
+}
+:root{
+    --bs-link-hover-color: gray
+}
+body { 
+    overflow-x: hidden;
+}
+.father {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.recent{
+    width: 55vw;
+    margin-top: 100px;
+}
+.button {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+}
+.recent button {
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    font-weight: 800;
+    justify-content: center;
+    display: flex;
+}
+.recent button:hover {
+    background-color: gray;
+    color: white;
+}
+.button a{
+    color: black;
+}
+.button a:hover{
+    color: white;
+}
+.courses {
+    width: 100%;
+}
+.course {
+    margin: 20px 20px 0 20px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    border-bottom: 2px;
+    background-color: rgb(56, 56, 56);
+}
+.meucurso {
+    margin: 0 20px 0 20px;
+    width: 100%;
+    padding: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: rgb(56, 56, 56);
+}
+.item img{
+    width: 100px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.item h4{
+    color: rgb(192, 192, 192);
+    margin: 20px;
+}
+.container-c {
+    margin: 0 20px 0 20px;
+    padding: 0 20px 0 20px;
+    width: 100%;
+    border: 1px solid rgb(56, 56, 56);
+    background-color: rgb(56, 56, 56);
+}
+.container-c h3{
+    background-color: black;
+    padding: 1  0px;
+    border-radius: 30px;
+    justify-content: center;
+    display: flex;
+}
+#pendente h3{
+    color: rgba(243, 106, 106, 0.541);
+}
+#finalizada h3{
+    color: rgba(104, 156, 253, 0.61);
+}
+.naming {
+    color: rgba(138, 138, 138, 0.815);
+    font-size: 22px;
+}
+
+.aula {
+    background-color: rgb(189, 189, 189);
+    padding: 30px;
+    border-radius: 30px;
+}
+#aula h1{
+    display: flex;
+    justify-content: center;
+}
+#aula h2{
+    display: flex;
+    justify-content: center;
+}
+#aula h3{
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+}
+.questoes h3{
+    display: flex;
+    justify-content: center;
+}
+#pendentes h4{
+    color: rgba(243, 106, 106, 0.541);
+
+}
+#respondidas h4{
+    color: rgba(104, 156, 253, 0.61);
+}
+#resposta {
+    margin: 30px;
+    display: flex;
+    font-size: 22px;
+    width: 40%;
+}
+.questao {
+    display: flex;
+    justify-content: center;
+}
+.container-d {
+    padding: 0 70px 0 70px;
+    width: 100%;
+    margin: 20px 0;
+}
+.container-d h4{
+    background-color: black;
+    padding: 4px;
+    border-radius: 30px;
+    justify-content: center;
+    display: flex;
+}
+.media {
+    display: flex;
+    justify-content: center;
+}
+.conteudo{
+    padding: 20px;
+    margin: 10px 10px 10px 10px ;
+    background-color: rgb(241, 241, 241);
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.login {
+    margin-top: 100px;
+}
+.left {
+    display: flex;
+    position: absolute;
+    top: 490px;
+    width: 100px;
+    left: 40px;
+    height: 80px;
+    color: black;
+}
+.left a{
+    color: black;
+}
+.right {
+    display: flex;
+    position: absolute;
+    top: 490px;
+    right: 20px;
+    width: 100px;
+    height: 80px;
+    color: black;
+}
+.right a{
+    color: black;
+
+}

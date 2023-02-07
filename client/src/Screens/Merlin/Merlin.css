@@ -1,0 +1,40 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(134, 52, 172);
+}
+.merlin{
+    height: 87vh;
+    margin-top: 84px;
+    width: 78vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-e{
+    background-color: black;
+    width: 94%;
+    height: 94%;
+    padding: 4px 10px 4px 10px;
+}
+.navbar-e{
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid white;
+}
+.navbar-e-div{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar-e h5{
+    color: white;
+}
+.container-f{
+    align-items: center;
+    display: flex;
+    width: 30%;
+    height: 89%;
+    background-color: rgb(112, 112, 112);
+}

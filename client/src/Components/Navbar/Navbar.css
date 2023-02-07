@@ -1,0 +1,47 @@
+/* NAVBAR */
+nav{
+    width: 100%;
+    background: rgb(24,24,24);
+    position: fixed;
+    top: 0;
+}
+.nav-1 {
+    width: 100%;
+    display: flex;
+}
+.ul-1 {
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+.ul-2 {
+    display: flex;
+    width: 50%;
+    justify-content: end;
+    align-items: center;
+}
+.ul-1 img{
+    width: 70px;
+    padding: 4px;
+    border-radius: 20px;
+}
+.ul-1 img:hover {
+    transition: .7s;
+    filter: contrast(1) brightness(.7);
+}
+.ul-1 li:hover, .ul-2 li:hover{
+    transition: .7s;
+    border-bottom: 4px solid rgba(118, 80, 155, 0.534);
+}
+li {
+    list-style: none;
+    margin: 0 20px;
+    padding: 5px 20px;
+    font-weight: 500;
+    border-bottom: 4px solid transparent;
+    background-color: rgba(153, 102, 201, 0);
+}
+a {
+    text-decoration: none;
+    color: rgb(192, 192, 192);
+}
