@@ -14,6 +14,7 @@ const questoesRoutes = require("./questoes/questoesRoutes");
 const chatRoutes = require("./chat/chatRoutes");
 const provaRoutes = require("./prova/provaRoutes");
 
+app.use(express.static(path.resolve(__dirname, "../client/build")));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json()); // using format json
 
