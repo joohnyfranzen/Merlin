@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel client/react-scripts",
-    "build": "parcel build client/react-scripts",
+    "start": "client/react-scripts",
+    "build": "build client/react-scripts",
     "seed": "nodemon server/db/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
