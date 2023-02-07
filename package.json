@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "client/react-scripts",
-    "chat": "nodemon index.js",
+    "start": "parcel client/react-scripts",
+    "build": "parcel build client/react-scripts",
     "seed": "nodemon server/db/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,6 +27,7 @@
     "sqlite3": "^5.1.4"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "parcel": "^2.8.3"
   }
 }
