@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "client/react-scripts",
-    "build": "build client/react-scripts",
+    "start": "nodemon index.js",
+    "build": "cd client && npm install && npm run build",
     "seed": "nodemon server/db/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
