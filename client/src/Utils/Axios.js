@@ -5,7 +5,7 @@ export default function Axios() {
   const { value } = store.getState().Auth;
 
   const http = axios.create({
-    baseURL: "https://merlin-api.vercel.app/",
+    baseURL: "merlin-api.vercel.app/",
     //baseURL: "http://192.168.0.117:3001/",
 
     headers: {
