@@ -5,7 +5,7 @@ export default function Axios() {
   const { value } = store.getState().Auth;
 
   const http = axios.create({
-    baseURL: ":3001/",
+    baseURL: ":/",
     //baseURL: "http://192.168.0.117:3001/",
 
     headers: {
