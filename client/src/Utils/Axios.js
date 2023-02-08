@@ -13,6 +13,8 @@ export default function Axios() {
     //baseURL: "http://192.168.0.117:3001/",
     headers: {
       "Content-type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Headers": "*",
       "x-access-token": `${value}`,
     },
   });
