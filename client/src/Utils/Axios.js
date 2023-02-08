@@ -12,9 +12,8 @@ export default function Axios() {
     headers: {
       "Access-Control-Allow-Origin": "*",
       "Content-type": "application/json",
-      'Content-Type': 'application/x-www-form-urlencoded'
+      "Content-Type": "application/x-www-form-urlencoded",
       "x-access-token": `${value}`,
-      
     },
   });
   return {
