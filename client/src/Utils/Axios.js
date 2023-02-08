@@ -3,6 +3,7 @@ import { store } from "..";
 
 export default function Axios() {
   const { value } = store.getState().Auth;
+  axios.defaults.headers.get["Access-Control-Allow-Origin"] = "*";
 
   const http = axios.create({
     url: "https://26a0-2804-14c-5fe9-816a-8f3-4b46-4f33-41d4.sa.ngrok.io/",
