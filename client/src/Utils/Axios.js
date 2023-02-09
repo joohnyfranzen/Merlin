@@ -10,7 +10,6 @@ export default function Axios() {
 
     headers: {
       "content-type": "application/json",
-      a,
     },
   });
   return {
