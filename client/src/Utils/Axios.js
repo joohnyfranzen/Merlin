@@ -16,6 +16,7 @@ export default function Axios() {
       "content-type": "application/json",
       "Access-Control-Allow-Origin": "*",
       "x-access-token": `${value}`,
+      "ngrok-skip-browser-warning": "any",
     },
   });
   return {
