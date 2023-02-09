@@ -7,10 +7,13 @@ export default function Axios() {
   const http = axios.create({
     baseURL: "https://2c7d-131-100-93-3.sa.ngrok.io",
     //baseURL: "http://192.168.0.117:3001/",
-
+    statusCode: 200,
+    body: "Hello, world!",
     headers: {
-      "content-type": "application/json",
-      "Access-Control-Allow-Origin": "https://2c7d-131-100-93-3.sa.ngrok.io",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE,OPTIONS",
+      "Content-Type": "application/json",
     },
   });
   return {
