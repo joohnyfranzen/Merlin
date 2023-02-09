@@ -8,6 +8,7 @@ export default function Axios() {
     baseURL: "https://merlin-api.vercel.app",
     headers: {
       "Content-Type": "application/json",
+      "x-access-token": `${value}`,
     },
   });
   return {
