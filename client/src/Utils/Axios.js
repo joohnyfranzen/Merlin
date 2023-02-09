@@ -5,6 +5,7 @@ export default function Axios() {
   const { value } = store.getState().Auth;
 
   axios.defaults.headers.common["X-Requested-With"] = "XMLHttpRequest";
+  axios.defaults.headers.common["Access-Control-Allow-Origin"] = "*";
   axios.defaults.withCredentials = true;
 
   const http = axios.create({
@@ -13,6 +14,7 @@ export default function Axios() {
 
     headers: {
       "content-type": "application/json",
+      "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Headers": "*",
       "x-access-token": `${value}`,
     },
