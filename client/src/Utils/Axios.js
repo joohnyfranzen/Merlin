@@ -10,6 +10,7 @@ export default function Axios() {
 
     headers: {
       "content-type": "application/json",
+      "Access-Control-Allow-Origin": "*",
     },
   });
   return {
