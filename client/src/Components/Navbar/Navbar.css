@@ -45,3 +45,12 @@ a {
     text-decoration: none;
     color: rgb(192, 192, 192);
 }
+
+.menu.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu {
+    opacity: 0;
+}

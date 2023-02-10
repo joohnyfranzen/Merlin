@@ -1,21 +1,21 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
-import { store } from "../..";
+export const Config = (el, initialState) => {
+  const [isActive, setIsActive] = useState(initialState);
 
-function Config() {
-  const { value } = store.getState().Auth;
-  const { userId } = store.getState().userId;
+  useEffect(() => {
+    const onClick = (e) => {
+      if (el.current != null && !el.current.contains(e.target)) {
+        setIsActive(!isActive);
+      }
+    };
+    if (isActive) {
+      window.addEventListener("clicl", onClick);
+    }
+    return () => {
+      window.removeEventListener("click", onClick);
+    };
+  }, [isActive, el]);
 
-  return (
-    <div>
-      <ul>
-        <li>
-          <Link to="conta">Conta</Link>
-        </li>
-      </ul>
-    </div>
-  );
-}
-
-export default Config;
+  return [isActive, setIsActive];
+};
