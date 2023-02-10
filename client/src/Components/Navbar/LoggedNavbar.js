@@ -33,7 +33,7 @@ export default function Navbar() {
           </ul>
           <ul className="ul-2">
             <li>
-              <Link to="/logout">LOGOUT</Link>
+              <Link to="/logout">SAIR</Link>
             </li>
             <li>
               <button onClick={onClick} className="menu-button">
@@ -47,9 +47,15 @@ export default function Navbar() {
         ref={dropDownRef}
         className={`menu ${isActive ? "active" : "inactive"}`}
       >
-        <li>Oi</li>
-        <li>Oi</li>
-        <li>Oi</li>
+        <li>
+          <Link to="#">Conta</Link>
+        </li>
+        <li>
+          <Link to="#">Pagamento</Link>
+        </li>
+        <li>
+          <Link to="#">Certificado</Link>
+        </li>
       </ul>
     </div>
   );

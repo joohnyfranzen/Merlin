@@ -67,3 +67,10 @@ button {
     right: 0;
     top: 80px;
 }
+.menu ul {
+    width: 100px;
+    background-color: rgb(59, 59, 59);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
