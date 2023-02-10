@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export const Config = (el, initialState) => {
+function Config(el, initialState) {
   const [isActive, setIsActive] = useState(initialState);
 
   useEffect(() => {
@@ -18,4 +18,6 @@ export const Config = (el, initialState) => {
   }, [isActive, el]);
 
   return [isActive, setIsActive];
-};
+}
+
+export default Config;
