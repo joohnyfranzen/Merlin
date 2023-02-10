@@ -24,6 +24,7 @@ import Feed from "../Screens/Feed/Feed";
 import Chat from "../Components/Chat/Chat";
 import Merlin from "../Screens/Merlin/Merlin";
 import Prova from "../Screens/Curso/Prova/Prova";
+import Conta from "../Screens/Conta/Conta";
 
 export default function Logged() {
   return (
@@ -32,6 +33,7 @@ export default function Logged() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cursos" element={<Cursos />} />
+        <Route path="/minhaconta" element={<Conta />} />
         <Route path="/feed" element={<Feed />} />
         <Route path="/curso/:cursoId" element={<Curso />} />
         <Route path="/logout" element={<Logout />} />

@@ -21,7 +21,7 @@ nav{
     align-items: center;
 }
 .ul-1 img{
-    width: 70px;
+    width: 40px;
     padding: 4px;
     border-radius: 20px;
 }
@@ -35,9 +35,10 @@ nav{
 }
 li {
     list-style: none;
-    margin: 0 20px;
-    padding: 5px 20px;
+    margin: 0 10px;
+    padding: 5px 10px;
     font-weight: 500;
+    font-size: 13px;
     border-bottom: 4px solid transparent;
     background-color: rgba(153, 102, 201, 0);
 }
@@ -48,10 +49,10 @@ a {
 
 button {
     background-color: rgba(153, 102, 201, 0);
-    height: 40px;
+    height: 30px;
+    border: 0;
 }
 .BsFillGearFill {
-    color: white;
     color: rgb(192, 192, 192);
     width: 70px;
 }
@@ -59,18 +60,21 @@ button {
     opacity: 1;
     visibility: visible;
 }
+.menubox {
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 60px;
+    align-items: center;
 
+}
 .menu {
     opacity: 0;
-    display: flex;
-    position: absolute;
-    right: 0;
-    top: 80px;
-}
-.menu ul {
-    width: 100px;
-    background-color: rgb(59, 59, 59);
-    display: flex;
-    justify-content: space-evenly;
+    background-color: rgb(59, 59, 59); 
     align-items: center;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+.menu li {
 }

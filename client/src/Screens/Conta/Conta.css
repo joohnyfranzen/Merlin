@@ -1,0 +1,31 @@
+.configuraçoes {
+    background-color: rgb(65, 65, 65);
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.config{
+    width: 240px;
+    height: 340px;
+    background-color: rgb(87, 87, 87);
+}
+.config li{
+    margin: 0;
+    padding: 14px;
+    border-bottom: 2px solid white;
+}
+.config-options {
+    margin: 0;
+    padding: 49px;
+    background-color: rgb(58, 58, 58);
+    
+}
+.config-button {
+    margin: 0;
+    padding: 0;
+}
+.config-text{
+    margin: 0;
+    padding: 0;
+}

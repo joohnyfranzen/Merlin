@@ -43,20 +43,23 @@ export default function Navbar() {
           </ul>
         </div>
       </nav>
-      <ul
-        ref={dropDownRef}
-        className={`menu ${isActive ? "active" : "inactive"}`}
-      >
-        <li>
-          <Link to="#">Conta</Link>
-        </li>
-        <li>
-          <Link to="#">Pagamento</Link>
-        </li>
-        <li>
-          <Link to="#">Certificado</Link>
-        </li>
-      </ul>
+      <div className="menubox">
+        <ul
+          ref={dropDownRef}
+          id="config"
+          className={`menu ${isActive ? "active" : "inactive"}`}
+        >
+          <li>
+            <Link to="/minhaconta">Conta</Link>
+          </li>
+          <li>
+            <Link to="#">Pagamento</Link>
+          </li>
+          <li>
+            <Link to="#">Certificado</Link>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
