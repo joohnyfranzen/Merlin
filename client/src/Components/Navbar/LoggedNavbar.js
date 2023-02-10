@@ -36,17 +36,17 @@ export default function Navbar() {
           </li>
           <li>
             <button onClick={onClick} className="menu-button">
-              <BsFillGearFill />
+              <BsFillGearFill className="BsFillGearFill" />
             </button>
-            <ul
-              ref={dropDownRef}
-              className={`menu ${isActive ? "active" : "inactive"}`}
-            >
-              <li>Oi</li>
-              <li>Oi</li>
-              <li>Oi</li>
-            </ul>
           </li>
+        </ul>
+        <ul
+          ref={dropDownRef}
+          className={`menu ${isActive ? "active" : "inactive"}`}
+        >
+          <li>Oi</li>
+          <li>Oi</li>
+          <li>Oi</li>
         </ul>
       </div>
     </nav>
