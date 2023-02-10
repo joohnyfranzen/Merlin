@@ -62,6 +62,6 @@ button {
 .menu {
     opacity: 0;
     display: flex;
-    position: relative;
+    position: absolute;
     right: 0;
 }

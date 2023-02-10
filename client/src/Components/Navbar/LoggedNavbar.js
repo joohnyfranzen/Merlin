@@ -11,44 +11,46 @@ export default function Navbar() {
 
   console.log(isActive);
   return (
-    <nav>
-      <div className="nav-1">
-        <ul className="ul-1">
-          <Link to="/merlin">
-            <img src="hat.jpg" alt="Witch Hat" />
-          </Link>
-          <li>
-            <Link to="/">INÍCIO</Link>
-          </li>
-          <li>
-            <Link to="/cursos">CURSOS</Link>
-          </li>
-          <li>
-            <Link to="/meuscursos">MEUS CURSOS</Link>
-          </li>
-          <li>
-            <Link to="/feed">FEED</Link>
-          </li>
-        </ul>
-        <ul className="ul-2">
-          <li>
-            <Link to="/logout">LOGOUT</Link>
-          </li>
-          <li>
-            <button onClick={onClick} className="menu-button">
-              <BsFillGearFill className="BsFillGearFill" />
-            </button>
-          </li>
-        </ul>
-        <ul
-          ref={dropDownRef}
-          className={`menu ${isActive ? "active" : "inactive"}`}
-        >
-          <li>Oi</li>
-          <li>Oi</li>
-          <li>Oi</li>
-        </ul>
-      </div>
-    </nav>
+    <div>
+      <nav>
+        <div className="nav-1">
+          <ul className="ul-1">
+            <Link to="/merlin">
+              <img src="hat.jpg" alt="Witch Hat" />
+            </Link>
+            <li>
+              <Link to="/">INÍCIO</Link>
+            </li>
+            <li>
+              <Link to="/cursos">CURSOS</Link>
+            </li>
+            <li>
+              <Link to="/meuscursos">MEUS CURSOS</Link>
+            </li>
+            <li>
+              <Link to="/feed">FEED</Link>
+            </li>
+          </ul>
+          <ul className="ul-2">
+            <li>
+              <Link to="/logout">LOGOUT</Link>
+            </li>
+            <li>
+              <button onClick={onClick} className="menu-button">
+                <BsFillGearFill className="BsFillGearFill" />
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <ul
+        ref={dropDownRef}
+        className={`menu ${isActive ? "active" : "inactive"}`}
+      >
+        <li>Oi</li>
+        <li>Oi</li>
+        <li>Oi</li>
+      </ul>
+    </div>
   );
 }
