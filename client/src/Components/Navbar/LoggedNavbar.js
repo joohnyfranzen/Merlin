@@ -15,9 +15,9 @@ export default function Navbar() {
       <nav>
         <div className="nav-1">
           <ul className="ul-1">
-            <Link to="http://ragnarok.merlinacademy.com.br">
+            <a href="http://ragnarok.merlinacademy.com.br">
               <img src="hat.jpg" alt="Witch Hat" />
-            </Link>
+            </a>
             <li>
               <Link to="/">INÍCIO</Link>
             </li>
