@@ -22,7 +22,7 @@ export default function Merlin() {
       <div className="merlin">
         <iframe
           title="This is a unique title"
-          src="http://ragnarok.merlinacademy.com.br"
+          src="//http://ragnarok.merlinacademy.com.br"
         ></iframe>
       </div>
     </div>
