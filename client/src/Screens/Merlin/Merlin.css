@@ -4,9 +4,9 @@
     background-color: rgb(134, 52, 172);
 }
 .merlin{
-    height: 87vh;
-    margin-top: 84px;
-    width: 78vw;
+    height: 100vh;
+    margin-top: 70px;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,4 +37,8 @@
     width: 30%;
     height: 89%;
     background-color: rgb(112, 112, 112);
+}
+iframe {
+    width: 100vw;
+    height: 100vh;
 }
