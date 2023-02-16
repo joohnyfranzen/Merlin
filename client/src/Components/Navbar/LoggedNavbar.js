@@ -15,7 +15,7 @@ export default function Navbar() {
       <nav>
         <div className="nav-1">
           <ul className="ul-1">
-            <Link to="/merlin">
+            <Link to="http://ragnarok.merlinacademy.com.br">
               <img src="hat.jpg" alt="Witch Hat" />
             </Link>
             <li>
