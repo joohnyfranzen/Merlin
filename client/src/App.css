@@ -8,6 +8,12 @@
 body { 
     overflow-x: hidden;
 }
+#homepage {
+    background-image: url('../public/homepage.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
 .father {
     width: 100%;
     display: flex;

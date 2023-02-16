@@ -16,33 +16,9 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="father">
+    <div className="father" id="homepage">
       <div className="recent">
-        <h3>Ultimos Cursos Adicionados</h3>
-        <div className="courses">
-          {cursos?.map((curso) => {
-            return (
-              <div className="course">
-                <div>
-                  <Link to={`/curso/${curso.id}`}>
-                    <div className="item">
-                      <img
-                        src={typeof curso.image === "string" ? curso.image : ""}
-                        alt="Witch Hat"
-                      />
-                    </div>
-                    <div className="item">
-                      <h4>{curso.professor}</h4>
-                    </div>
-                    <div className="item">
-                      <h4>{curso.nome}</h4>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+        <div className="courses"></div>
       </div>
     </div>
   );
