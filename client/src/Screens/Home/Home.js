@@ -18,6 +18,12 @@ export default function Home() {
   return (
     <div className="father" id="homepage">
       <div className="recent">
+        <div id="homepage-container-a">
+          <h2>
+            O <span id="Futuro">Futuro</span> já está chegando!
+          </h2>
+          <h4>Por quanto tempo pretende ficar esperando?</h4>
+        </div>
         <div className="courses"></div>
       </div>
     </div>

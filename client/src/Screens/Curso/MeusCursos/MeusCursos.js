@@ -30,7 +30,7 @@ export default function Cursos() {
   }, []);
   console.log(finalizados);
   return (
-    <div className="father">
+    <div className="father background">
       <div className="recent">
         <h3>Meus Cursos</h3>
         <div className="courses">

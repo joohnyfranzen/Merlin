@@ -15,25 +15,35 @@ export default function Navbar() {
       <nav>
         <div className="nav-1">
           <ul className="ul-1">
-            <Link to="/merlin">
+            <Link className="animar" to="/merlin">
               <img src="hat.jpg" alt="Witch Hat" />
             </Link>
             <li>
-              <Link to="/">INÍCIO</Link>
+              <Link className="animar" to="/">
+                INÍCIO
+              </Link>
             </li>
             <li>
-              <Link to="/cursos">CURSOS</Link>
+              <Link className="animar" to="/cursos">
+                CURSOS
+              </Link>
             </li>
             <li>
-              <Link to="/meuscursos">MEUS CURSOS</Link>
+              <Link className="animar" to="/meuscursos">
+                MEUS CURSOS
+              </Link>
             </li>
             <li>
-              <Link to="/feed">FEED</Link>
+              <Link className="animar" to="/feed">
+                FEED
+              </Link>
             </li>
           </ul>
           <ul className="ul-2">
             <li>
-              <Link to="/logout">SAIR</Link>
+              <Link className="animar" to="/logout">
+                SAIR
+              </Link>
             </li>
             <li>
               <button onClick={onClick} className="menu-button">
