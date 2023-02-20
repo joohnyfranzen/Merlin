@@ -1,8 +1,23 @@
 
-.section-1 {
-    width: 100vw;
+html {
+    scroll-behavior: smooth;
+}
+#home{
     height: 100vh;
+}
+#sobre{
+    height: 100vh;
+
+}
+#background-continued{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 17vh;
     display: flex;
+    background-color: black;
+}
+#ofertas{
+    height: 100vh;
 }
 #homepage {
     background-image: url('../../../public/homepage.gif');
@@ -12,30 +27,55 @@
     display: flex;
 }
 .background {
-    background-image: url('../../../public/background.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 100vh;
 }
 .homepage-container-a {
-    background-color: black;
+    background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.1) 100%);
     width: 42vw;
     height: 18vh;
-    opacity: 70%;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 20px;
     margin-top: 200px;
+    animation: roll-left-box-a 2s;
 }
 .homepage-container-a h2, h4{
     color: rgba(255, 255, 255);
+
 }
 .homepage-container-b {
-    margin-top: 30px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.1) 100%);
+    width: 42vw;
+    height: 18vh;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 100px;
+    margin-top: 30px;
+    animation: roll-left-box-b 3s;
 }
 #Futuro{
     color: rgb(67, 65, 180);
+}
+@keyframes roll-left-box-a {
+    0% {
+        margin-left: 1700px;
+    }
+    100% {
+        margin-left: 30px;
+    } 
+}
+@keyframes roll-left-box-b {
+    0% {
+        margin-left: 1700px;
+    }
+    40% {
+        margin-left: 1700px;
+    }
+    100% {
+        margin-left: 100px;
+    } 
 }

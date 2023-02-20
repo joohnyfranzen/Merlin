@@ -8,10 +8,10 @@ export default function Navbar() {
       <div className="navbar-unlogged">
         <ul className="ul-10">
           <li>
-            <Link to="/">INÍCIO</Link>
+            <a href="#home">INÍCIO</a>
           </li>
           <li>
-            <Link to="/cursos">SOBRE</Link>
+            <a href="#sobre">SOBRE</a>
           </li>
           <div>
             <Link to="/merlin" id="imagem-nav">
@@ -19,7 +19,7 @@ export default function Navbar() {
             </Link>
           </div>
           <li>
-            <Link to="/feed">OFERTAS</Link>
+            <a href="#ofertas">OFERTAS</a>
           </li>
           <li>
             <Link to="/login">LOGIN</Link>

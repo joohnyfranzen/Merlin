@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <div>
-      <section id="section-1">
+      <section id="home">
         <div id="homepage">
           <div>
             <div className="homepage-container-a">
@@ -33,7 +33,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="section-2">Olá mundo</section>
+      <section id="sobre">
+        <div id="background-continued"></div>
+      </section>
+      <section id="ofertas">HELLO WORLD 2</section>
     </div>
   );
 }
