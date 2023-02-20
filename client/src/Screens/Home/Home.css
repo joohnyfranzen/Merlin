@@ -1,0 +1,41 @@
+
+.section-1 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+#homepage {
+    background-image: url('../../../public/homepage.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+}
+.background {
+    background-image: url('../../../public/background.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.homepage-container-a {
+    background-color: black;
+    width: 42vw;
+    height: 18vh;
+    opacity: 70%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-top: 200px;
+}
+.homepage-container-a h2, h4{
+    color: rgba(255, 255, 255);
+}
+.homepage-container-b {
+    margin-top: 30px;
+    margin-left: 100px;
+}
+#Futuro{
+    color: rgb(67, 65, 180);
+}

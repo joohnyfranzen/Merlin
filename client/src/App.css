@@ -8,35 +8,7 @@
 body { 
     overflow-x: hidden;
 }
-#homepage {
-    background-image: url('../public/homepage.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
-.background {
-    background-image: url('../public/background.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
-#homepage-container-a {
-    background-color: black;
 
-    width: 42vw;
-    height: 18vh;
-    opacity: 80%;
-    border-radius: 10px;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-}
-#homepage-container-a h2, h4{
-    color: rgba(255, 255, 255, 0.644);
-}
-#Futuro{
-    color: rgb(67, 65, 180);
-}
 .father {
     width: 100%;
     display: flex;

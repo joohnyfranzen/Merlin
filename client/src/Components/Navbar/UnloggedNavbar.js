@@ -11,7 +11,7 @@ export default function Navbar() {
             <Link to="/">INÍCIO</Link>
           </li>
           <li>
-            <Link to="/cursos">CURSOS</Link>
+            <Link to="/cursos">SOBRE</Link>
           </li>
           <div>
             <Link to="/merlin" id="imagem-nav">
@@ -19,7 +19,7 @@ export default function Navbar() {
             </Link>
           </div>
           <li>
-            <Link to="/feed">FEED</Link>
+            <Link to="/feed">OFERTAS</Link>
           </li>
           <li>
             <Link to="/login">LOGIN</Link>
