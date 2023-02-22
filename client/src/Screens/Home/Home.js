@@ -34,9 +34,15 @@ export default function Home() {
         </div>
       </section>
       <section id="sobre">
-        <div id="background-continued"></div>
+        <div id="homepage-2">
+          <div id="box-about">
+            <p>OLA MUNDO</p>
+          </div>
+        </div>
       </section>
-      <section id="ofertas">HELLO WORLD 2</section>
+      <section id="ofertas">
+        <div id="homepage-3"></div>
+      </section>
     </div>
   );
 }

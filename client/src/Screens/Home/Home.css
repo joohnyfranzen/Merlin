@@ -3,28 +3,18 @@ html {
     scroll-behavior: smooth;
 }
 #home{
-    height: 100vh;
+    min-height: 100vh;
+    width: 100vw;
 }
-#sobre{
-    height: 100vh;
 
-}
-#background-continued{
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 17vh;
-    display: flex;
-    background-color: black;
-}
-#ofertas{
-    height: 100vh;
-}
 #homepage {
     background-image: url('../../../public/homepage.gif');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    width: 1400px;
+    min-height: 800px;
     display: flex;
+    resize: both;
 }
 .background {
     height: 100vh;
@@ -78,4 +68,53 @@ html {
     100% {
         margin-left: 100px;
     } 
+}
+
+#sobre{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(2, 2, 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#homepage-2{
+    border-bottom: 10px solid black;
+    border-top: 10px solid black;
+    background: linear-gradient(0deg, rgba(84,147,213,1) 0%, rgba(219,45,253,1) 100%);    
+    height: 80vh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box-about {
+    width: 200px;
+    height: 100px;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20.5px );
+    -webkit-backdrop-filter: blur( 20.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: black;
+    opacity: 0.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    position: absolute;
+}
+#box-about p {
+    color: black;
+}
+#ofertas{
+    height: 100vh;
+
+}
+#homepage-3{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1400px;
+    height: 700px;
+    background-image: url('../../../public/background.gif');   
 }
