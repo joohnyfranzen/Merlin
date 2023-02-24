@@ -3,6 +3,7 @@ import Axios from "../../Utils/Axios";
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Home.css";
+import Navbar from "../../Components/Navbar/UnloggedNavbar";
 
 export default function Home() {
   const { http } = Axios();
@@ -18,6 +19,7 @@ export default function Home() {
 
   return (
     <div>
+      <Navbar />
       <section id="home">
         <div id="homepage">
           <div>
@@ -36,7 +38,7 @@ export default function Home() {
       <section id="sobre">
         <div id="homepage-2">
           <div id="box-about">
-            <p>OLA MUNDO</p>
+            <p>OLA MUNDO, making a 2d game javascript based</p>
           </div>
         </div>
       </section>
