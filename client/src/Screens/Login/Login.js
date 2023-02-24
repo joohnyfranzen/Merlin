@@ -1,17 +1,19 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { store } from "../..";
 import Axios from "../../Utils/Axios";
+import Loading from "../../Components/Loading/Loading";
 import "./Login.css";
 
 export default function Login() {
   const navigate = useNavigate();
   const { http } = Axios();
-
+  const [loading, setLoading] = useState(false);
   const email = useRef(null);
   const password = useRef(null);
 
   const submitForm = () => {
+    setLoading(true);
     http
       .post("/login", {
         email: email.current.value,
@@ -22,6 +24,7 @@ export default function Login() {
         localStorage.setItem("token", res.data.token);
         store.dispatch({ type: "SET_ID", userId: res.data.id });
         localStorage.setItem("userId", res.data.id);
+        setLoading(false);
         navigate("/");
       });
   };
@@ -61,6 +64,7 @@ export default function Login() {
           </div>
         </div>
       </div>
+      {loading ? <Loading /> : <></>}
     </div>
   );
 }

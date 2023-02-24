@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { store } from "../..";
+import Loading from "../../Components/Loading/Loading";
 import Axios from "../../Utils/Axios";
 import "./Register.css";
 
@@ -11,8 +12,9 @@ export default function Register() {
   const [password, setPassword] = useState();
   const [name, setName] = useState();
   const [nick, setNick] = useState();
-
+  const [loading, setLoading] = useState(false);
   const submitForm = () => {
+    setLoading(true);
     http
       .post("/register", {
         nome: name,
@@ -25,6 +27,7 @@ export default function Register() {
         localStorage.setItem("token", res.data.token);
         store.dispatch({ type: "SET_ID", userId: res.data.id });
         localStorage.setItem("userId", res.data.id);
+        setLoading(false);
         navigate("/");
       });
   };
@@ -44,7 +47,6 @@ export default function Register() {
           <form className="register-form">
             <input
               type="name"
-              className="form-control"
               placeholder="Seu nome"
               onChange={(e) => setName(e.target.value)}
               id="name"
@@ -83,6 +85,7 @@ export default function Register() {
           </div>
         </div>
       </div>
+      {loading ? <Loading /> : <></>}
     </div>
   );
 }

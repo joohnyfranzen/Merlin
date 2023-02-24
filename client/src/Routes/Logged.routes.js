@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Logout from "../Components/Logout/Logout";
 import Navbar from "../Components/Navbar/LoggedNavbar";
-import Home from "../Screens/Home/Home";
+import LoggedHome from "../Screens/Home/LoggedHome";
 import Cursos from "../Screens/Curso/Cursos/Cursos";
 import Curso from "../Screens/Curso/Curso/Curso";
 import MeusCursos from "../Screens/Curso/MeusCursos/MeusCursos";
@@ -31,7 +31,7 @@ export default function Logged() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<LoggedHome />} />
         <Route path="/cursos" element={<Cursos />} />
         <Route path="/minhaconta" element={<Conta />} />
         <Route path="/feed" element={<Feed />} />
