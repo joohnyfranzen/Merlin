@@ -22,7 +22,7 @@ html {
 .homepage-container-a {
     background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.1) 100%);
     width: 42vw;
-    height: 18vh;
+    height: 14vh;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -30,6 +30,11 @@ html {
     margin-left: 20px;
     margin-top: 200px;
     animation: roll-left-box-a 2s;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.9px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .homepage-container-a h2, h4{
     color: rgba(255, 255, 255);
@@ -38,7 +43,7 @@ html {
 .homepage-container-b {
     background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.1) 100%);
     width: 42vw;
-    height: 18vh;
+    height: 14vh;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -46,9 +51,14 @@ html {
     margin-left: 100px;
     margin-top: 30px;
     animation: roll-left-box-b 3s;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.9px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 #Futuro{
-    color: rgb(67, 65, 180);
+    color: rgb(84, 170, 241);
 }
 @keyframes roll-left-box-a {
     0% {

@@ -24,11 +24,11 @@ export default function Home() {
           <div>
             <div className="homepage-container-a">
               <h2>
-                O <span id="Futuro">Futuro</span> já está chegando!
+                O <span id="Futuro">Futuro</span> já chegou!
               </h2>
             </div>
             <div className="homepage-container-a homepage-container-b">
-              <h4>Por quanto tempo pretende ficar esperando?</h4>
+              <h4>E você faz parte dele!</h4>
             </div>
             <div className="courses"></div>
           </div>

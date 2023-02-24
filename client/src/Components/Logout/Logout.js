@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 import { store } from "../..";
 
 export default function Logout() {
@@ -7,6 +7,6 @@ export default function Logout() {
   localStorage.removeItem("token");
   store.dispatch({ type: "SET_ID_OUT" });
   localStorage.removeItem("userId");
-  navigate("/login");
-  return <h1>Logget out</h1>;
+
+  return <Navigate to="/" />;
 }
