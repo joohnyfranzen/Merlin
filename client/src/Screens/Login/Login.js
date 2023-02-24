@@ -14,19 +14,23 @@ export default function Login() {
 
   const submitForm = () => {
     setLoading(true);
-    http
-      .post("/login", {
-        email: email.current.value,
-        senha: password.current.value,
-      })
-      .then((res) => {
-        store.dispatch({ type: "SET_TOKEN", value: res.data.token });
-        localStorage.setItem("token", res.data.token);
-        store.dispatch({ type: "SET_ID", userId: res.data.id });
-        localStorage.setItem("userId", res.data.id);
-        setLoading(false);
-        navigate("/");
-      });
+    function submit() {
+      http
+        .post("/login", {
+          email: email.current.value,
+          senha: password.current.value,
+        })
+        .then((res) => {
+          store.dispatch({ type: "SET_TOKEN", value: res.data.token });
+          localStorage.setItem("token", res.data.token);
+          store.dispatch({ type: "SET_ID", userId: res.data.id });
+          localStorage.setItem("userId", res.data.id);
+          setLoading(false);
+          navigate("/");
+        });
+    }
+
+    setTimeout(submit, 3000);
   };
   return (
     <div className="login-page">

@@ -15,21 +15,25 @@ export default function Register() {
   const [loading, setLoading] = useState(false);
   const submitForm = () => {
     setLoading(true);
-    http
-      .post("/register", {
-        nome: name,
-        email: email,
-        nick: nick,
-        senha: password,
-      })
-      .then((res) => {
-        store.dispatch({ type: "SET_TOKEN", value: res.data.token });
-        localStorage.setItem("token", res.data.token);
-        store.dispatch({ type: "SET_ID", userId: res.data.id });
-        localStorage.setItem("userId", res.data.id);
-        setLoading(false);
-        navigate("/");
-      });
+    function submit() {
+      http
+        .post("/register", {
+          nome: name,
+          email: email,
+          nick: nick,
+          senha: password,
+        })
+        .then((res) => {
+          store.dispatch({ type: "SET_TOKEN", value: res.data.token });
+          localStorage.setItem("token", res.data.token);
+          store.dispatch({ type: "SET_ID", userId: res.data.id });
+          localStorage.setItem("userId", res.data.id);
+          setLoading(false);
+          navigate("/");
+        });
+    }
+
+    setTimeout(submit, 3000);
   };
 
   return (
