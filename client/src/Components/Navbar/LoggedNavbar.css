@@ -1,0 +1,38 @@
+.logged-navbar {
+    display: flex;
+    position: fixed;
+    right: 0;
+    width: 14vw;
+    height: 100vh;
+}
+.logged-navbar button {
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+.logged-navbar img {
+    border-bottom-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+
+    background-color: rgba(0, 0, 0);
+    display: flex;
+    width: 200px;
+    padding: 0 20px;
+    top: -40px;
+    right: 0;
+    position: fixed;
+    z-index: 1;
+
+}
+.icons{
+    display: flex;
+    position: fixed;
+    top: 90px;
+    right: 59px;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+
+}
+.icon{
+    color: white;
+}

@@ -1,75 +1,67 @@
-import { Link } from "react-router-dom";
-import React, { useRef } from "react";
-import "./Navbar.css";
-import { BsFillGearFill } from "react-icons/bs";
-import Config from "../Config/Config";
-
+import React, { useState } from "react";
+import "./LoggedNavbar.css";
+import Navigation1 from "./Navigation1/Navigation1";
+import Navigation2 from "./Navigation2/Navigation2";
+import Navigation3 from "./Navigation3/Navigation3";
+import { BiBookContent, BiUser, BiWrench } from "react-icons/bi";
 export default function Navbar() {
-  const dropDownRef = useRef(null);
-  const [isActive, setIsActive] = Config(dropDownRef);
-  const onClick = () => setIsActive(!isActive);
+  const [showNav1, setShowNav1] = useState(false);
+  const [showNav2, setShowNav2] = useState(false);
+  const [showNav3, setShowNav3] = useState(false);
 
-  console.log(isActive);
   return (
     <div>
       <nav>
-        <div className="nav-1">
-          <ul className="ul-1">
-            <Link className="animar" to="/merlin">
-              <img src="hat.jpg" alt="Witch Hat" />
-            </Link>
-            <li>
-              <Link className="animar" to="/">
-                INÍCIO
-              </Link>
-            </li>
-            <li>
-              <Link className="animar" to="/cursos">
-                CURSOS
-              </Link>
-            </li>
-            <li>
-              <Link className="animar" to="/meuscursos">
-                MEUS CURSOS
-              </Link>
-            </li>
-            <li>
-              <Link className="animar" to="/feed">
-                FEED
-              </Link>
-            </li>
-          </ul>
-          <ul className="ul-2">
-            <li>
-              <Link className="animar" to="/logout">
-                SAIR
-              </Link>
-            </li>
-            <li>
-              <button onClick={onClick} className="menu-button">
-                <BsFillGearFill className="BsFillGearFill" />
-              </button>
-            </li>
-          </ul>
+        <div className="logged-navbar">
+          <button>
+            <img src="merlin-logo.png" alt="Witch Hat" />
+          </button>
+          <div className="icons">
+            <button
+              onClick={() => {
+                if (!showNav1) {
+                  setShowNav1(true);
+                  setShowNav2(false);
+                  setShowNav3(false);
+                } else {
+                  setShowNav1(false);
+                }
+              }}
+            >
+              <BiBookContent size={24} className="icon" />
+            </button>
+            <button
+              onClick={() => {
+                if (!showNav2) {
+                  setShowNav2(true);
+                  setShowNav1(false);
+                  setShowNav3(false);
+                } else {
+                  setShowNav2(false);
+                }
+              }}
+            >
+              <BiUser size={24} className="icon" />
+            </button>
+            <button
+              onClick={() => {
+                if (!showNav3) {
+                  setShowNav3(true);
+                  setShowNav1(false);
+                  setShowNav2(false);
+                } else {
+                  setShowNav3(false);
+                }
+              }}
+            >
+              <BiWrench size={24} className="icon" />
+            </button>
+          </div>
+          {showNav1 ? <Navigation1 /> : <></>}
+          {showNav2 ? <Navigation2 /> : <></>}
+          {showNav3 ? <Navigation3 /> : <></>}
         </div>
       </nav>
-      <div className="menubox">
-        <ul
-          ref={dropDownRef}
-          id="config"
-          className={`menu ${isActive ? "active" : "inactive"}`}
-        >
-          <li>
-            <Link to="/minhaconta">Conta</Link>
-          </li>
-          <li>
-            <Link to="#">Pagamento</Link>
-          </li>
-          <li>
-            <Link to="#">Certificado</Link>
-          </li>
-        </ul>
-      </div>
     </div>
   );
 }

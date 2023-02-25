@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import React from "react";
-import "./Navbar.css";
+import "./UnloggedNavbar.css";
 
 export default function Navbar() {
   return (
