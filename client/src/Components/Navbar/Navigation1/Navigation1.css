@@ -30,9 +30,7 @@
     transition: 0.1s;
 }
 .option-nav1 a:hover{
-    width: 170px;
-    height: 49px;
-    font-size: 20px;
+    transform: scale(1.3)
 }
 @keyframes nav-animate1 {
     0% {

@@ -12,16 +12,13 @@
 .logged-navbar img {
     border-bottom-right-radius: 70px;
     border-bottom-left-radius: 70px;
-
-    background-color: rgba(0, 0, 0);
     display: flex;
     width: 200px;
     padding: 0 20px;
     top: -40px;
     right: 0;
     position: fixed;
-    z-index: 1;
-
+    z-index: 2;
 }
 .icons{
     display: flex;
@@ -30,9 +27,13 @@
     right: 59px;
     align-items: center;
     justify-content: center;
-    z-index: 2;
+    z-index: 3;
 
 }
 .icon{
     color: white;
+    transition: 0.1s;
+}
+.icon:hover{
+    transform: scale(1.3)
 }

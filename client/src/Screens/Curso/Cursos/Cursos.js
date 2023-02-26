@@ -1,6 +1,7 @@
 import Axios from "../../../Utils/Axios";
 import { React, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import "./Cursos.css";
 
 export default function Cursos() {
   const { http } = Axios();
@@ -15,29 +16,33 @@ export default function Cursos() {
   }, []);
 
   return (
-    <div className="father">
-      <div className="recent">
+    <div className="cursos-bg">
+      <div className="center">
         <h3>Todos Cursos</h3>
-        <div className="courses">
-          {cursos?.map((curso) => {
-            return (
-              <div className="course">
-                <div>
-                  <Link to={`/curso/${curso.id}`}>
-                    <div className="item">
-                      <img src={curso.image} alt="Witch Hat" />
-                    </div>
-                    <div className="item">
-                      <h4>{curso.professor}</h4>
-                    </div>
-                    <div className="item">
-                      <h4>{curso.nome}</h4>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-            );
-          })}
+      </div>
+      <div className="container">
+        <div className="cursos">
+          <div className="list-cursos">
+            <div className="curso-container">
+              {cursos?.map((curso) => {
+                return (
+                  <div>
+                    <Link to={`/curso/${curso.id}`}>
+                      <div className="item-container">
+                        <div className="item-img">
+                          <img src={curso.image} alt="Witch Hat" />
+                        </div>
+                        <div className="item-professor">
+                          <h4>{curso.professor}</h4>
+                          <h4>{curso.nome}</h4>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </div>

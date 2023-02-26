@@ -35,6 +35,7 @@ html {
     -webkit-backdrop-filter: blur( 13.5px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+    z-index: 0;
 }
 .homepage-container-a h2, h4{
     color: rgba(255, 255, 255);
