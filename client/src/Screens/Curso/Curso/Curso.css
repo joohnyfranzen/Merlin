@@ -1,0 +1,77 @@
+.cursos-bg {
+    background-image: url("../../../../public/cursos-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.center{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(7, 10, 197);
+    text-shadow: 1px 1px rgb(104, 211, 243);
+    font-weight: 900;
+}
+.center h3{
+    width: 370px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.9px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.1) 100%);
+
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+}
+.meuscursos {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+    box-shadow: 0 8px 32px 0 rgba(123, 31, 135, 0.37);
+    backdrop-filter: blur( 4.9px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.1) 100%);
+}
+
+.list-meuscursos{
+    width: 70%;
+    height: 100%;
+    margin-top: 100px;
+}
+.item-subcontainer{
+    width: 100%;
+    height: ;
+
+}
+.item-container{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 100%);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba(38, 156, 211, 0.37);
+    backdrop-filter: blur( 4.9px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    height: 140px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.item-img img{
+    width: 70px;
+}
