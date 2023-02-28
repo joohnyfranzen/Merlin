@@ -8,11 +8,11 @@ html {
 }
 
 #homepage {
-    background-image: url('../../../public/homepage.gif');
+    background-image: url('../../../public/bg-landing-page.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
-    min-height: 120vh;
+    min-height: 100vh;
     display: flex;
     resize: both;
 }
