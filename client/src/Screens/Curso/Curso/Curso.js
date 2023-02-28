@@ -47,34 +47,24 @@ export default function Curso() {
 
   return (
     <div className="cursos-bg">
-      <div className="center">
+      <div className="center-curso">
         <h3>Curso de {cursoData.nome}</h3>
       </div>
       <div className="container">
-        <div className="cursos">
-          <div className="list-cursos">
-            <div className="item-container">
+        <div className="curso">
+          <div className="list-curso">
+            <div className="item-container-curso">
               <div className="item-img">
-                <img src="hat.jpg" alt="Witch Hat" />
+                <img src={cursoData.image} alt="Witch Hat" />
               </div>
-              <div className="item-subcontainer">
-                <div className="item-professor">
-                  <h4>Professor {cursoData.professor}</h4>
-                </div>
-                <div className="item-professor">
-                  <h4>{cursoData.nome}</h4>
-                </div>
-                <div className="item-professor">
-                  <h4>{cursoData.descricao}</h4>
-                </div>
-                <div className="item-professor">
-                  <h4>Nivel de Dificuldade {cursoData.tier}</h4>
-                </div>
-                <div className="item-professor">
-                  <h4>Titulo {cursoData.titulo}</h4>
-                </div>
+              <div className="item-curso">
+                <h4>Professor {cursoData.professor}</h4>
+                <h4>{cursoData.nome}</h4>
+                <h4>{cursoData.descricao}</h4>
+                <h4>Nivel de Dificuldade {cursoData.tier}</h4>
+                <h4>Titulo {cursoData.titulo}</h4>
               </div>
-              <div className="button">
+              <div className="button-curso">
                 <button
                   type="button"
                   onClick={() => {

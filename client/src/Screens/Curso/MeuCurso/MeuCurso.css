@@ -1,4 +1,4 @@
-.cursos-bg {
+.meucurso-bg {
     background-image: url("../../../../public/cursos-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -6,7 +6,7 @@
     height: 100vh;
     overflow: hidden;
 }
-.center-curso{
+.center-meucurso{
     height: 100px;
     display: flex;
     justify-content: center;
@@ -15,7 +15,7 @@
     text-shadow: 1px 1px rgb(104, 211, 243);
     font-weight: 900;
 }
-.center-curso h3{
+.center-meucurso h3{
     width: 430px;
     height: 70px;
     display: flex;
@@ -36,7 +36,7 @@
     justify-content: center;
     
 }
-.curso {
+.meucurso {
     margin-top: 10%;
     width: 70%;
     height: 49%;
@@ -51,13 +51,13 @@
     background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.1) 100%);
 }
 
-.list-curso{
+.list-meucurso{
     width: 70%;
     height: 100%;
     margin-top: 30px;
 }
 
-.item-container-curso{
+.item-container-meucurso{
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 100%);
     border-radius: 10px;
     box-shadow: 0 8px 32px 0 rgba(38, 156, 211, 0.37);
@@ -72,11 +72,11 @@
     width: 70px;
 }
 
-.item-curso{
+.item-meucurso{
     width: 700px;
 }
 
-.item-curso h4{
+.item-meucurso h4{
     font-size: medium;
 }
 .button-curso button{
