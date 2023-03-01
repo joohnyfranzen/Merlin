@@ -1,9 +1,9 @@
 import React from "react";
-import Axios from "../../Utils/Axios";
+import Axios from "../../../Utils/Axios";
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./LoggedHome.css";
-import Navbar from "../../Components/Navbar/UnloggedNavbar";
+import Navbar from "../../../Components/Navbar/UnloggedNavbar";
 
 export default function Home() {
   const { http } = Axios();

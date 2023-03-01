@@ -1,11 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Logout from "../Components/Logout/Logout";
 import Navbar from "../Components/Navbar/LoggedNavbar";
-import LoggedHome from "../Screens/Home/LoggedHome";
+import LoggedHome from "../Screens/Home/LoggedHome/LoggedHome";
 import Cursos from "../Screens/Curso/Cursos/Cursos";
 import Curso from "../Screens/Curso/Curso/Curso";
 import MeusCursos from "../Screens/Curso/MeusCursos/MeusCursos";
-
 import Admin from "../Screens/Admin/Admin";
 import EditarCurso from "../Screens/Admin/Curso/EditarCurso";
 import Aulas from "../Screens/Admin/Aulas/Aulas";

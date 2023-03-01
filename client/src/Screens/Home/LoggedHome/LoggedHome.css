@@ -1,6 +1,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow    : hidden;
 }
 #home{
     min-height: 100vh;
@@ -8,7 +9,7 @@ html {
 }
 
 #homepage {
-    background-image: url('../../../public/bg-landing-page.jpg');
+    background-image: url('../../../../public/bg-landing-page.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -102,7 +103,7 @@ html {
 #box-about {
     width: 300px;
     height: 400px;
-    background-image: url('../../../public/game/battlebot_idle.gif');
+    background-image: url('../../../../public/game/battlebot_idle.gif');
 
 }
 #box-about p {
